@@ -1,0 +1,2594 @@
+@charset "UTF-8";
+/*公用*/
+/*常用属性*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微软雅黑;
+}
+
+input {
+  border: 1px solid #e5e6e7;
+}
+
+select {
+  border: 1px solid #e5e6e7;
+}
+
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+.textC {
+  text-align: center;
+}
+
+.textR {
+  text-align: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inlineB {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.verticalM {
+  vertical-align: middle;
+}
+
+.horizontalM {
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.display {
+  display: none;
+}
+
+/*通用样式*/
+.verifys {
+  background: #fef9f9;
+  border: 1px solid #f2959e;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*样式*/
+.type3 {
+  color: #ffaa00;
+  border-bottom: 2px solid #ffaa00;
+}
+
+.type_four {
+  color: #ffaa00;
+}
+
+.type_five {
+  color: #ffaa00;
+  border-bottom: 3px solid #ffaa00;
+}
+
+.M-box .type_six {
+  background: #ffaa00;
+  color: #fff;
+}
+
+.M-box .type_six:hover {
+  background: #ffaa00;
+  color: #fff;
+}
+
+/*验证样式*/
+li {
+  list-style-type: none;
+}
+
+h3, h1, h2, h4, h5, h6 {
+  font-weight: normal;
+}
+
+button:focus {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+/*遮罩*/
+.shade {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.6;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  filter: alpha(opacity(60));
+}
+
+/*头部*/
+.head {
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.head .container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.head .logopng {
+  padding-top: 16px;
+}
+
+.head .webNav li {
+  width: 110px;
+  color: #282828;
+  line-height: 68px;
+  height: 68px;
+  border-bottom: 2px solid #ffffff;
+  font-size: 14px;
+  list-style: none;
+}
+
+.head .webNav li:hover {
+  border-bottom: 2px solid #ffaa00;
+  -webkit-transition: 1000;
+  transition: 1000;
+}
+
+.head .webNav li > a {
+  display: inline-block;
+  width: 110px;
+}
+
+.head .webNav li > a:hover {
+  color: #ffaa00;
+}
+
+.head .webNav .product, .head .webNav .Suggest, .head .webNav .as_regards {
+  position: relative !important;
+  z-index: 4;
+}
+
+.head .webNav .productBox {
+  position: absolute !important;
+  bottom: -178px;
+  left: 0;
+  z-index: 4;
+}
+
+.head .webNav .SuggestBox {
+  position: absolute !important;
+  bottom: -72px !important;
+  left: 0;
+  z-index: 4;
+}
+
+.head .webNav .as_regardsBox {
+  position: absolute !important;
+  bottom: -72px !important;
+  left: 0;
+  z-index: 4;
+}
+
+.head .webNav .productBox a, .head .webNav .SuggestBox a, .head .webNav .as_regardsBox a {
+  width: 110px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: block;
+  background: #fff;
+}
+
+.head .webNav .productBox a:hover, .head .webNav .SuggestBox a:hover, .head .webNav .as_regardsBox a:hover {
+  color: #ffaa00;
+  background: #f9f9f9;
+}
+
+/*底部*/
+.foot {
+  background: #2f2f2f;
+  height: 240px;
+  border-top: 4px solid #535353;
+  color: #9b9999;
+  font-family: 黑体;
+  min-width: 1200px;
+}
+
+.foot .containerU {
+  height: 176px;
+  width: 1200px;
+}
+
+.foot p {
+  font-family: 黑体;
+}
+
+.foot .containerU .footIcon {
+  padding-top: 32px;
+}
+
+.foot .containerU .footIcon span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.foot .containerU .footIcon span:hover {
+  background-position: -30px;
+}
+
+.foot .containerU .left .footHelp {
+  background: url(../images/foothelp.png);
+}
+
+.foot .containerU .left .footBlog {
+  background: url(../images/footblog.png);
+}
+
+.foot .containerU .left .footWechat {
+  background: url(../images/footwechat.png);
+  position: relative;
+}
+
+.containerU .left .footWechat img {
+  position: absolute;
+  top: -160px;
+  left: -55px;
+  display: none;
+}
+
+.foot .containerU .cer {
+  padding-top: 6px;
+}
+
+.foot .containerU .cer img {
+  border: 1px solid #2f2f2f;
+}
+
+.foot .containerU .cer img:hover {
+  border: 1px solid #c5c5c5;
+}
+
+.foot .containerU .middle {
+  padding-right: 52px;
+}
+
+.foot .containerU .p1 {
+  font-size: 18px;
+  padding-top: 32px;
+}
+
+.foot .containerU .p2 {
+  font-size: 14px;
+  padding-top: 16px;
+}
+
+.foot .containerU .p3 {
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.foot .containerU .p4 {
+  font-size: 24px;
+  padding-top: 12px;
+}
+
+.foot .containerU .p5 {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.foot .containerU .p6 {
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+.foot .containerU .p7 {
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.foot .containerD {
+  border-top: 1px solid #414141;
+}
+
+.foot .containerD .container {
+  width: 1200px;
+  font-size: 12px;
+  line-height: 60px;
+}
+
+/*正文部分*/
+.main {
+  background: #f9f9f9;
+  padding-bottom: 20px;
+}
+
+.main .container {
+  width: 1200px;
+}
+
+.main .nav {
+  font-size: 14px;
+  color: #282828;
+  line-height: 50px;
+}
+
+.main .nav a {
+  color: #282828;
+}
+
+/*底部对应弹层*/
+.cerPop {
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.cerPop img {
+  height: 70%;
+  margin: 100px auto;
+  display: block;
+}
+
+div.main {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  /* margin-top: 20px; */
+  width: 1200px;
+  max-height: 2075px;
+}
+
+div.main div.list-left {
+  display: inline-block;
+  position: relative;
+  width: 800px;
+  min-height: 962px;
+}
+
+div.main div.list-right {
+  display: inline-block;
+  position: absolute;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: 1px;
+}
+
+div.main div.list-right div.downloads {
+  height: 410px;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+div.main div.list-right div.downloads div {
+  margin: 0 auto;
+  margin-top: 8px;
+  text-align: center;
+}
+
+div.main div.list-right div.downloads div.premium {
+  width: 330px;
+  height: 190px;
+  border: 2px solid #f9f9f9;
+}
+
+div.main div.list-right div.downloads div.premium div.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  height: 42px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+div.main div.list-right div.downloads div.premium div.descript {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+div.main div.list-right div.downloads div.premium div.descript span {
+  display: block;
+}
+
+div.main div.list-right div.downloads div.premium div.descript span.d2 {
+  margin-top: 5px;
+  color: #f77b4c;
+}
+
+div.main div.list-right div.downloads div.premium div.dladdr {
+  margin-top: 22px;
+}
+
+div.main div.list-right div.downloads div.premium div.dladdr a {
+  background-color: #ffa924;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+div.main div.list-right div.downloads div.free {
+  width: 330px;
+  height: 190px;
+  border: 2px solid #f9f9f9;
+}
+
+div.main div.list-right div.downloads div.free div.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-top: 20px;
+  height: 42px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+div.main div.list-right div.downloads div.free div.descript {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+div.main div.list-right div.downloads div.free div.dladdr {
+  margin-top: 35px;
+}
+
+div.main div.list-right div.downloads div.free div.dladdr a {
+  background-color: #ffa924;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+div.main div.list-right div.hot-info {
+  display: block;
+  position: relative;
+  height: 540px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+div.main div.list-right div.hot-info div {
+  margin: 0 auto;
+}
+
+div.main div.list-right div.hot-info div.wrap {
+  display: block;
+  width: 310px;
+}
+
+div.main div.list-right div.hot-info div.wrap div.column-name {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+div.main div.list-right div.hot-info div.wrap div.column-name span.sep {
+  margin-right: 10px;
+  border-left: 5px solid orange;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+  height: 160px;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a {
+  display: block;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a div.content {
+  height: 160px;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a div.content img {
+  width: 310px;
+  height: 160px;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a div.content div.title {
+  display: block;
+  position: absolute;
+  width: 310px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 130px;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.6;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a div.content div.title span {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  /* left: 15px; */
+  top: 2px;
+}
+
+div.main div.list-right div.hot-info div.wrap ul {
+  margin: 0 auto;
+}
+
+div.main div.list-right div.hot-info div.wrap ul.hot-info-list {
+  margin-top: 15px;
+}
+
+div.main div.list-right div.hot-info div.wrap ul.hot-info-list li {
+  line-height: 27px;
+  position: relative;
+}
+
+div.main div.list-right div.hot-info div.wrap ul.hot-info-list li div.hot-info-dot {
+  display: inline-block;
+  position: absolute;
+  background-color: #e3e3e3;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 12px;
+}
+
+div.main div.list-right div.hot-info div.wrap ul.hot-info-list li a {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 13px;
+}
+
+div.main-content {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1230px;
+  /* max-height: 3000px; */
+}
+
+div.main-content div.list-left {
+  display: inline-block;
+  position: relative;
+  width: 830px;
+}
+
+div.main-content div.list-left div.article_info_view_area {
+  width: 830px;
+  min-height: 962px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+div.main-content div.list-left div.article_info_view_area p.article_info_view_title {
+  display: inline-block;
+  position: relative;
+  width: 770px;
+  padding-top: 60px;
+  padding-left: 28px;
+  padding-right: 32px;
+  margin-bottom: 21px;
+  line-height: 36px;
+  font-size: 18px;
+  color: #282828;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time {
+  width: 770px;
+  margin: 0 auto;
+  line-height: 12px;
+  margin-bottom: 53px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span {
+  font-size: 13px;
+  color: #626262;
+  margin-right: 35px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span.view-tag {
+  color: orange;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span i {
+  margin-right: 1px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span i.icon-tag {
+  background: url("../images/tag.png") 0 0 no-repeat;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span i.icon-time {
+  background: url("../images/created-time.png") 0 0 no-repeat;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span i.icon-view {
+  background: url("../images/click-num.png") 0 0 no-repeat;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content {
+  width: 770px;
+  font-size: 14px;
+  color: #626262;
+  line-height: 30px;
+  text-indent: 2em;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  min-height: 500px;
+  overflow: visible;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content img {
+  max-width: 736px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div.dg-content-wrap {
+  margin: 0 auto;
+  width: 120px;
+  height: 46px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content {
+  width: 26px;
+  height: 30px;
+  display: block;
+  position: relative;
+  margin-left: 39px;
+  margin-top: 8px;
+  background: url(../images/digupContent.png) 0 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content a {
+  height: 30px;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content a:hover {
+  background: url(../images/digupContent.png) 26px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content span.diggnum {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 6px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom {
+  margin: 0 auto;
+  width: 770px;
+  height: 60px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom span.share {
+  float: right;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom span.share a {
+  cursor: pointer;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom span.share a div {
+  width: 34px;
+  height: 34px;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom span.share a div:hover {
+  background-position: -34px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul {
+  float: left;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li {
+  float: left;
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.prev {
+  width: 76px;
+  height: 34px;
+  display: block;
+  position: relative;
+  background: url(../images/prev-article.png) 0 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.prev a {
+  height: 34px;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.prev a:hover {
+  background: url(../images/prev-article.png) 76px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.prev a span {
+  position: absolute;
+  left: 25px;
+  top: 7px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.next {
+  width: 76px;
+  height: 34px;
+  display: block;
+  position: relative;
+  background: url(../images/next-article.png) 0 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.next a {
+  height: 34px;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.next a:hover {
+  background: url(../images/next-article.png) 76px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.next a span {
+  position: absolute;
+  left: 11px;
+  top: 7px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment {
+  position: relative;
+  display: block;
+  width: 830px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other {
+  position: relative;
+  margin: 0 auto;
+  width: 770px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 33px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.comment-title-wrap {
+  float: left;
+  font-weight: 600;
+  height: 30px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.comment-title-wrap span {
+  font-size: 16px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.comment-title-wrap span.comment-title {
+  display: inline-block;
+  font-size: 18px;
+  height: 30px;
+  border-bottom: 3px solid orange;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.order-action {
+  float: right;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.order-action a:hover {
+  color: orange;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap {
+  width: 770px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div {
+  position: relative;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap {
+  margin-top: 30px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.avatar {
+  display: block;
+  position: relative;
+  float: left;
+  width: 50px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main {
+  display: inline-block;
+  width: 700px;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li {
+  float: left;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.icon-comment-diggup {
+  width: 19px;
+  height: 19px;
+  display: block;
+  position: relative;
+  background: url("../images/digupComment.png") 0 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.icon-comment-diggup a {
+  height: 19px;
+  display: block;
+  position: relative;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.icon-comment-diggup a:hover {
+  background: url("../images/digupComment.png") 19px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.zcpldiv {
+  font-size: 13px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main div.nickname {
+  font-size: 15px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main div.comment-created-time {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #999;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main div.content {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 708px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main div.separate-line {
+  width: 700px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment {
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment input {
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment input.nickname {
+  width: 770px;
+  height: 35px;
+  margin-top: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment textarea {
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment textarea.saytext {
+  margin-top: 20px;
+  resize: none;
+  width: 770px;
+  height: 200px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.title {
+  border-bottom: 1px solid #e5e5e5;
+  height: 26px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.title span {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 2px;
+  border-bottom: 3px solid orange;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit label.yz {
+  float: right;
+  padding-top: 6px;
+  font-size: 15px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit img.plKeyImg {
+  float: right;
+  width: 90px;
+  height: 32px;
+  margin-right: 30px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit input {
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit input.imageField {
+  float: right;
+  background-color: orange;
+  font-size: 14px;
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: white;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit input.inputText {
+  display: block;
+  float: right;
+  width: 140px;
+  height: 32px;
+}
+
+div.main-content div.list-right {
+  display: inline-block;
+  position: absolute;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: 1px;
+}
+
+div.main-content div.list-right div.downloads {
+  height: 410px;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+div.main-content div.list-right div.downloads div {
+  margin: 0 auto;
+  margin-top: 8px;
+  text-align: center;
+}
+
+div.main-content div.list-right div.downloads div.premium {
+  width: 330px;
+  height: 190px;
+  border: 2px solid #f9f9f9;
+}
+
+div.main-content div.list-right div.downloads div.premium div.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  height: 42px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+div.main-content div.list-right div.downloads div.premium div.descript {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+div.main-content div.list-right div.downloads div.premium div.descript span {
+  display: block;
+}
+
+div.main-content div.list-right div.downloads div.premium div.descript span.d2 {
+  margin-top: 5px;
+  color: #f77b4c;
+}
+
+div.main-content div.list-right div.downloads div.premium div.dladdr {
+  margin-top: 22px;
+}
+
+div.main-content div.list-right div.downloads div.premium div.dladdr a {
+  background-color: #ffa924;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+div.main-content div.list-right div.downloads div.free {
+  width: 330px;
+  height: 190px;
+  border: 2px solid #f9f9f9;
+}
+
+div.main-content div.list-right div.downloads div.free div.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-top: 20px;
+  height: 42px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+div.main-content div.list-right div.downloads div.free div.descript {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+div.main-content div.list-right div.downloads div.free div.dladdr {
+  margin-top: 35px;
+}
+
+div.main-content div.list-right div.downloads div.free div.dladdr a {
+  background-color: #ffa924;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+div.main-content div.list-right div.hot-info {
+  display: block;
+  position: relative;
+  height: 540px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+div.main-content div.list-right div.hot-info div {
+  margin: 0 auto;
+}
+
+div.main-content div.list-right div.hot-info div.wrap {
+  display: block;
+  width: 310px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.column-name {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.column-name span.sep {
+  margin-right: 10px;
+  border-left: 5px solid orange;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+  height: 160px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a {
+  display: block;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a div.content {
+  height: 160px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a div.content img {
+  width: 310px;
+  height: 160px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a div.content div.title {
+  display: block;
+  position: absolute;
+  width: 310px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 130px;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.6;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a div.content div.title span {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  /* left: 15px; */
+  top: 2px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul {
+  margin: 0 auto;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul.hot-info-list {
+  margin-top: 15px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul.hot-info-list li {
+  line-height: 27px;
+  position: relative;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul.hot-info-list li div.hot-info-dot {
+  display: inline-block;
+  position: absolute;
+  background-color: #e3e3e3;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 12px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul.hot-info-list li a {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 13px;
+}
+
+.messageMain li a.other i.icon-created-time {
+  background: url(../images/created-time.png) no-repeat;
+  color: transparent;
+}
+
+.messageMain li a.other i.icon-click-num {
+  background: url(../images/click-num.png) no-repeat;
+  color: transparent;
+  margin-left: 70px;
+}
+
+/*分页样式*/
+.page {
+  width: 798px;
+  height: 75px;
+  margin-right: 0 auto;
+  font-size: 0;
+}
+
+.M-box {
+  float: right;
+  margin-top: 17px;
+}
+
+.M-box li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #f2f0f5;
+  background-color: #fff;
+}
+
+.M-box li:hover {
+  background: #f2f0f5;
+}
+
+.hdnavInfo {
+  color: #ffaa00;
+  border-bottom: 3px solid #ffaa00;
+}
+
+.pager {
+  width: 830px;
+  background-color: #f9f9f9;
+}
+/*# sourceMappingURL=common.css.map */@charset "UTF-8";
+/*公用*/
+/*常用属性*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微软雅黑;
+}
+
+input {
+  border: 1px solid #e5e6e7;
+}
+
+select {
+  border: 1px solid #e5e6e7;
+}
+
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+.textC {
+  text-align: center;
+}
+
+.textR {
+  text-align: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inlineB {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.verticalM {
+  vertical-align: middle;
+}
+
+.horizontalM {
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.display {
+  display: none;
+}
+
+/*通用样式*/
+.verifys {
+  background: #fef9f9;
+  border: 1px solid #f2959e;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*样式*/
+.type3 {
+  color: #ffaa00;
+  border-bottom: 2px solid #ffaa00;
+}
+
+.type_four {
+  color: #ffaa00;
+}
+
+.type_five {
+  color: #ffaa00;
+  border-bottom: 2px solid #ffaa00;
+}
+
+.M-box .type_six {
+  background: #ffaa00;
+  color: #fff;
+}
+
+.M-box .type_six:hover {
+  background: #ffaa00;
+  color: #fff;
+}
+
+/*验证样式*/
+li {
+  list-style-type: none;
+}
+
+h3, h1, h2, h4, h5, h6 {
+  font-weight: normal;
+}
+
+button:focus {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+/*遮罩*/
+.shade {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.6;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  filter: alpha(opacity(60));
+}
+
+/*头部*/
+.head {
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.head .container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.head .logopng {
+  padding-top: 16px;
+}
+
+.head .webNav li {
+  width: 110px;
+  color: #282828;
+  line-height: 68px;
+  height: 68px;
+  border-bottom: 2px solid #ffffff;
+  font-size: 14px;
+  list-style: none;
+}
+
+.head .webNav li:hover {
+  border-bottom: 2px solid #ffaa00;
+  -webkit-transition: 1000;
+  transition: 1000;
+}
+
+.head .webNav li > a {
+  display: inline-block;
+  width: 110px;
+}
+
+.head .webNav li > a:hover {
+  color: #ffaa00;
+}
+
+.head .webNav .product, .head .webNav .Suggest, .head .webNav .as_regards {
+  position: relative !important;
+  z-index: 4;
+}
+
+/*.head .webNav .productBox {
+  position: absolute !important;
+  bottom: -142px;
+  left: 0;
+  z-index: 4;
+}*/
+
+.head .webNav .SuggestBox {
+  position: absolute !important;
+  bottom: -72px !important;
+  left: 0;
+  z-index: 4;
+}
+
+.head .webNav .as_regardsBox {
+  position: absolute !important;
+  bottom: -72px !important;
+  left: 0;
+  z-index: 4;
+}
+
+.head .webNav .productBox a, .head .webNav .SuggestBox a, .head .webNav .as_regardsBox a {
+  width: 110px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: block;
+  background: #fff;
+}
+
+.head .webNav .productBox a:hover, .head .webNav .SuggestBox a:hover, .head .webNav .as_regardsBox a:hover {
+  color: #ffaa00;
+  background: #f9f9f9;
+}
+
+/*底部*/
+.foot {
+  background: #2f2f2f;
+  height: 240px;
+  border-top: 4px solid #535353;
+  color: #9b9999;
+  font-family: 黑体;
+  min-width: 1200px;
+}
+
+.foot .containerU {
+  height: 176px;
+  width: 1200px;
+}
+
+.foot p {
+  font-family: 黑体;
+}
+
+.foot .containerU .footIcon {
+  padding-top: 32px;
+}
+
+.foot .containerU .footIcon span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.foot .containerU .footIcon span:hover {
+  background-position: -30px;
+}
+
+.foot .containerU .left .footHelp {
+  background: url(../images/foothelp.png);
+}
+
+.foot .containerU .left .footBlog {
+  background: url(../images/footblog.png);
+}
+
+.foot .containerU .left .footWechat {
+  background: url(../images/footwechat.png);
+  position: relative;
+}
+
+.containerU .left .footWechat img {
+  position: absolute;
+  top: -160px;
+  left: -55px;
+  display: none;
+}
+
+.foot .containerU .cer {
+  padding-top: 6px;
+}
+
+.foot .containerU .cer img {
+  border: 1px solid #2f2f2f;
+}
+
+.foot .containerU .cer img:hover {
+  border: 1px solid #c5c5c5;
+}
+
+.foot .containerU .middle {
+  padding-right: 52px;
+}
+
+.foot .containerU .p1 {
+  font-size: 18px;
+  padding-top: 32px;
+}
+
+.foot .containerU .p2 {
+  font-size: 14px;
+  padding-top: 16px;
+}
+
+.foot .containerU .p3 {
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.foot .containerU .p4 {
+  font-size: 24px;
+  padding-top: 12px;
+}
+
+.foot .containerU .p5 {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.foot .containerU .p6 {
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+.foot .containerU .p7 {
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.foot .containerD {
+  border-top: 1px solid #414141;
+}
+
+.foot .containerD .container {
+  width: 1200px;
+  font-size: 12px;
+  line-height: 60px;
+}
+
+/*正文部分*/
+.main {
+  background: #f9f9f9;
+  padding-bottom: 20px;
+}
+
+.main .container {
+  width: 1200px;
+}
+
+.main .nav {
+  font-size: 14px;
+  color: #282828;
+  line-height: 50px;
+}
+
+.main .nav a {
+  color: #282828;
+}
+
+/*底部对应弹层*/
+.cerPop {
+  z-index: 444;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.cerPop img {
+  height: 70%;
+  margin: 100px auto;
+  display: block;
+}
+
+div.main {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1200px;
+  max-height: 2075px;
+}
+
+div.main div.list-left {
+  display: inline-block;
+  position: relative;
+  width: 800px;
+  min-height: 962px;
+}
+
+div.main div.list-right {
+  display: inline-block;
+  position: absolute;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: 1px;
+}
+
+div.main div.list-right div.downloads {
+  height: 410px;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+div.main div.list-right div.downloads div {
+  margin: 0 auto;
+  margin-top: 8px;
+  text-align: center;
+}
+
+div.main div.list-right div.downloads div.premium {
+  width: 330px;
+  height: 190px;
+  border: 2px solid #f9f9f9;
+}
+
+div.main div.list-right div.downloads div.premium div.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  height: 42px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+div.main div.list-right div.downloads div.premium div.descript {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+div.main div.list-right div.downloads div.premium div.descript span {
+  display: block;
+}
+
+div.main div.list-right div.downloads div.premium div.descript span.d2 {
+  margin-top: 5px;
+  color: #f77b4c;
+}
+
+div.main div.list-right div.downloads div.premium div.dladdr {
+  margin-top: 22px;
+}
+
+div.main div.list-right div.downloads div.premium div.dladdr a {
+  background-color: #ffa924;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+div.main div.list-right div.downloads div.premium div.dladdr a:hover {
+  background-color: #ff9600;
+}
+
+div.main div.list-right div.downloads div.premium div.dladdr a:active {
+  background-color: #f17f05;
+}
+
+div.main div.list-right div.downloads div.free {
+  width: 330px;
+  height: 190px;
+  border: 2px solid #f9f9f9;
+}
+
+div.main div.list-right div.downloads div.free div.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-top: 20px;
+  height: 42px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+div.main div.list-right div.downloads div.free div.descript {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+div.main div.list-right div.downloads div.free div.dladdr {
+  margin-top: 35px;
+}
+
+div.main div.list-right div.downloads div.free div.dladdr a {
+  background-color: #ffa924;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+div.main div.list-right div.downloads div.free div.dladdr a:hover {
+  background-color: #ff9600;
+}
+
+div.main div.list-right div.downloads div.free div.dladdr a:active {
+  background-color: #f17f05;
+}
+
+div.main div.list-right div.hot-info {
+  display: block;
+  position: relative;
+  height: 540px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+div.main div.list-right div.hot-info div {
+  margin: 0 auto;
+}
+
+div.main div.list-right div.hot-info div.wrap {
+  display: block;
+  width: 310px;
+}
+
+div.main div.list-right div.hot-info div.wrap div.column-name {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+div.main div.list-right div.hot-info div.wrap div.column-name span.sep {
+  margin-right: 10px;
+  border-left: 5px solid orange;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+  height: 160px;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a {
+  display: block;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a div.content {
+  height: 160px;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a div.content img {
+  width: 310px;
+  height: 160px;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a div.content div.title {
+  display: block;
+  position: absolute;
+  width: 310px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 130px;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.6;
+}
+
+div.main div.list-right div.hot-info div.wrap div.special a div.content div.title span {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  left: 13px;
+  top: 3px;
+}
+
+div.main div.list-right div.hot-info div.wrap ul {
+  margin: 0 auto;
+}
+
+div.main div.list-right div.hot-info div.wrap ul.hot-info-list {
+  margin-top: 15px;
+}
+
+div.main div.list-right div.hot-info div.wrap ul.hot-info-list li {
+  line-height: 27px;
+  position: relative;
+}
+
+div.main div.list-right div.hot-info div.wrap ul.hot-info-list li div.hot-info-dot {
+  display: inline-block;
+  position: absolute;
+  background-color: #e3e3e3;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 12px;
+}
+
+div.main div.list-right div.hot-info div.wrap ul.hot-info-list li a {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 13px;
+  color: #282828;
+}
+
+div.main-content {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1230px;
+  /* max-height: 3000px; */
+}
+
+div.main-content div.list-left {
+  display: inline-block;
+  position: relative;
+  width: 830px;
+}
+
+div.main-content div.list-left div.article_info_view_area {
+  width: 830px;
+  min-height: 962px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+div.main-content div.list-left div.article_info_view_area p.article_info_view_title {
+  display: inline-block;
+  position: relative;
+  width: 770px;
+  padding-top: 30px;
+  padding-left: 28px;
+  padding-right: 32px;
+  margin-bottom: 21px;
+  line-height: 36px;
+  font-size: 18px;
+  color: #282828;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time {
+  width: 770px;
+  margin: 0 auto;
+  line-height: 12px;
+  margin-bottom: 53px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span {
+  font-size: 13px;
+  color: #626262;
+  margin-right: 35px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span.view-tag {
+  color: orange;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span i {
+  margin-right: 1px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span i.icon-tag {
+  background: url("../images/tag.png") 0 0 no-repeat;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span i.icon-time {
+  background: url("../images/created-time.png") 0 0 no-repeat;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_time span i.icon-view {
+  background: url("../images/click-num.png") 0 0 no-repeat;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content {
+  width: 770px;
+  font-size: 14px;
+  color: #626262;
+  line-height: 30px;
+  text-indent: 2em;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  min-height: 500px;
+  overflow: visible;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content img {
+  max-width: 736px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div.dg-content-wrap {
+  margin: 0 auto;
+  width: 120px;
+  height: 46px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content {
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: relative;
+  margin-left: 42px;
+  margin-top: 10px;
+  background: url(../images/digupContent.png) 0 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content a {
+  height: 22px;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content a:hover {
+  background: url(../images/digupContent.png) 44px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content a:active {
+  background: url(../images/digupContent.png) 22px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content a.hasDigged {
+  background: url(../images/digupContent.png) 22px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.article_info_view_content div ul.digup-content li.icon-dg-content span.diggnum {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom {
+  margin: 0 auto;
+  width: 770px;
+  height: 60px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom span.share {
+  float: right;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom span.share a {
+  cursor: pointer;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom span.share a div {
+  width: 34px;
+  height: 34px;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom span.share a div:hover {
+  background-position: -34px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul {
+  float: left;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li {
+  float: left;
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.prev {
+  width: 76px;
+  height: 34px;
+  display: block;
+  position: relative;
+  background: url(../images/prev-article.png) 0 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.prev a {
+  height: 34px;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.prev a:hover {
+  background: url(../images/prev-article.png) 76px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.prev a span {
+  position: absolute;
+  left: 25px;
+  top: 7px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.next {
+  width: 76px;
+  height: 34px;
+  display: block;
+  position: relative;
+  background: url(../images/next-article.png) 0 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.next a {
+  height: 34px;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.next a:hover {
+  background: url(../images/next-article.png) 76px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.mainBottom ul.neighbor-article li.next a span {
+  position: absolute;
+  left: 11px;
+  top: 7px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment {
+  position: relative;
+  display: block;
+  width: 830px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other {
+  position: relative;
+  margin: 0 auto;
+  width: 770px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 33px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.comment-title-wrap {
+  float: left;
+  font-weight: 600;
+  height: 30px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.comment-title-wrap span {
+  font-size: 16px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.comment-title-wrap span.comment-title {
+  display: inline-block;
+  font-size: 18px;
+  height: 30px;
+  border-bottom: 3px solid orange;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.order-action {
+  float: right;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.order-action a:hover {
+  color: #ffa924;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.other div.order-action a:active {
+  color: #f17f05;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap {
+  width: 770px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div {
+  position: relative;
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap {
+  margin-top: 30px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.avatar {
+  display: block;
+  position: relative;
+  float: left;
+  width: 50px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main {
+  display: inline-block;
+  width: 700px;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li {
+  float: left;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.icon-comment-diggup {
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: relative;
+  background: url("../images/digupComment.png") 0 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.icon-comment-diggup a {
+  height: 18px;
+  display: block;
+  position: relative;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.icon-comment-diggup a:hover {
+  background: url("../images/digupComment.png") 36px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.icon-comment-diggup a:active {
+  background: url("../images/digupComment.png") 18px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.icon-comment-diggup a.hasAdded {
+  background: url("../images/digupComment.png") 18px 0;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main ul.comment-diggup li.zcpldiv {
+  font-size: 13px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main div.nickname {
+  font-size: 15px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main div.comment-created-time {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #999;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main div.content {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 708px;
+}
+
+div.main-content div.list-left div.article_info_view_area div.list-comment div.comment div.wrap div.main-wrap div.comment-main div.separate-line {
+  width: 700px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment {
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment input {
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment input.nickname {
+  width: 770px;
+  height: 35px;
+  margin-top: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  text-indent: 10px;
+  outline: none;
+  color:#626262;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment input:hover {
+  border: 1px solid #aaaaaa;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment input:focus {
+  border: 1px solid #ffa924;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment textarea {
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment textarea.saytext {
+  margin-top: 20px;
+  resize: none;
+  width: 770px;
+  height: 200px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  text-indent: 10px;
+  outline: none;
+  color:#626262;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment textarea:hover {
+  border: 1px solid #aaaaaa;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment textarea:focus {
+  border: 1px solid #ffa924;
+}
+
+input::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #cccccc;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #cccccc;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+/* Firefox < 19 */
+textarea:-moz-placeholder {
+    color: #cccccc;
+}
+
+/* Firefox > 19 */
+textarea::-moz-placeholder {
+    color: #cccccc;
+}
+
+/* Internet Explorer 10 */
+textarea:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.title {
+  border-bottom: 1px solid #e5e5e5;
+  height: 26px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.title span {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 2px;
+  border-bottom: 3px solid orange;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit label.yz {
+  float: left;
+  padding-top: 6px;
+  font-size: 15px;
+  margin-left: -9px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit label.yz span.special {
+  color:#ffa924;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit img.plKeyImg {
+  float: right;
+  width: 90px;
+  height: 32px;
+  margin-right: 30px;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit input {
+  display: block;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit input.imageField {
+  float: right;
+  background-color: #ffa924;
+  font-size: 14px;
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #fff;
+  outline: none;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit input.imageField:hover {
+  background-color: #ff9600;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit input.imageField:active {
+  background-color: #f17f05;
+}
+
+div.main-content div.list-left div.article_info_view_area form.article-comment div.commit input.inputText {
+  display: block;
+  float: right;
+  width: 140px;
+  height: 32px;
+  outline: none;
+  text-indent: 10px;
+}
+
+div.main-content div.list-right {
+  display: inline-block;
+  position: absolute;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: 1px;
+}
+
+div.main-content div.list-right div.downloads {
+  height: 410px;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+div.main-content div.list-right div.downloads div {
+  margin: 0 auto;
+  margin-top: 8px;
+  text-align: center;
+}
+
+div.main-content div.list-right div.downloads div.premium {
+  width: 330px;
+  height: 190px;
+  border: 2px solid #f9f9f9;
+}
+
+div.main-content div.list-right div.downloads div.premium div.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  height: 42px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+div.main-content div.list-right div.downloads div.premium div.descript {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+div.main-content div.list-right div.downloads div.premium div.descript span {
+  display: block;
+}
+
+div.main-content div.list-right div.downloads div.premium div.descript span.d2 {
+  margin-top: 5px;
+  color: #f77b4c;
+}
+
+div.main-content div.list-right div.downloads div.premium div.dladdr {
+  margin-top: 22px;
+}
+
+div.main-content div.list-right div.downloads div.premium div.dladdr a {
+  background-color: #ffa924;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+div.main-content div.list-right div.downloads div.premium div.dladdr a:hover {
+  background-color: #ff9600;
+}
+
+div.main-content div.list-right div.downloads div.premium div.dladdr a:active {
+  background-color: #f17f05;
+}
+
+div.main-content div.list-right div.downloads div.free {
+  width: 330px;
+  height: 190px;
+  border: 2px solid #f9f9f9;
+}
+
+div.main-content div.list-right div.downloads div.free div.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-top: 20px;
+  height: 42px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+div.main-content div.list-right div.downloads div.free div.descript {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+div.main-content div.list-right div.downloads div.free div.dladdr {
+  margin-top: 35px;
+}
+
+div.main-content div.list-right div.downloads div.free div.dladdr a {
+  background-color: #ffa924;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+div.main-content div.list-right div.downloads div.free div.dladdr a:hover {
+  background-color: #ff9600;
+}
+
+div.main-content div.list-right div.downloads div.free div.dladdr a:active {
+  background-color: #f17f05;
+}
+
+div.main-content div.list-right div.hot-info {
+  display: block;
+  position: relative;
+  height: 540px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+div.main-content div.list-right div.hot-info div {
+  margin: 0 auto;
+}
+
+div.main-content div.list-right div.hot-info div.wrap {
+  display: block;
+  width: 310px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.column-name {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.column-name span.sep {
+  margin-right: 10px;
+  border-left: 5px solid orange;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+  height: 160px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a {
+  display: block;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a div.content {
+  height: 160px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a div.content img {
+  width: 310px;
+  height: 160px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a div.content div.title {
+  display: block;
+  position: absolute;
+  width: 310px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 130px;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.6;
+}
+
+div.main-content div.list-right div.hot-info div.wrap div.special a div.content div.title span {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  left: 13px;
+  top: 3px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul {
+  margin: 0 auto;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul.hot-info-list {
+  margin-top: 15px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul.hot-info-list li {
+  line-height: 27px;
+  position: relative;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul.hot-info-list li div.hot-info-dot {
+  display: inline-block;
+  position: absolute;
+  background-color: #e3e3e3;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 12px;
+}
+
+div.main-content div.list-right div.hot-info div.wrap ul.hot-info-list li a {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 13px;
+  color: #282828;
+}
+
+.messageMain li a.other i.icon-created-time {
+  background: url(../images/created-time.png) no-repeat;
+  color: transparent;
+}
+
+.messageMain li a.other i.icon-click-num {
+  background: url(../images/click-num.png) no-repeat;
+  color: transparent;
+  margin-left: 70px;
+}
+
+/*分页样式*/
+.page {
+  width: 798px;
+  height: 75px;
+  margin-right: 0 auto;
+  font-size: 0;
+}
+
+.M-box {
+  float: right;
+  margin-top: 17px;
+}
+
+.M-box li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #f2f0f5;
+  background-color: #fff;
+}
+
+.M-box li:hover {
+  background: #f2f0f5;
+}
+
+.hdnavInfo {
+  color: #ffaa00;
+  border-bottom: 3px solid #ffaa00;
+}
+
+.pager {
+  width: 830px;
+  background-color: #f9f9f9;
+}
+/*# sourceMappingURL=common.css.map */
